@@ -1,0 +1,121 @@
+.postInfo {
+  display: flex;
+}
+
+.container {
+  width: 100%;
+}
+
+.PostInfoContainer {
+  padding: 20px;
+  margin-right: 50px;
+  width: calc((100% - 50px) / 2);
+  max-height: 400px;
+  overflow: auto;
+  border-radius: 20px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.PostInfoContainer::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 505;
+  background-color: rgb(96, 127, 211);
+}
+
+.PostInfoContainer::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(96, 127, 211);
+}
+
+.PostInfoContainer::-webkit-scrollbar-track {
+  //   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #f9f9fd;
+}
+
+.commentsContainer {
+  max-height: 400px;
+  width: calc((100% - 50px) / 2);
+  display: flex;
+  flex-direction: column;
+}
+
+.comments {
+  padding: 15px;
+  overflow: auto;
+  background-color: rgba(240, 248, 255, 0.664);
+  border-radius: 20px;
+}
+
+.comments::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 505;
+  background-color: rgb(96, 127, 211);
+}
+
+.comments::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(96, 127, 211);
+}
+
+.comments::-webkit-scrollbar-track {
+  //   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #f9f9fd;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.input {
+  padding: 10px;
+  border: 0px;
+  border-radius: 10px;
+  width: 75%;
+  transition: box-shadow 200ms linear;
+  outline: none;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.addBtn,
+.btnEdit,
+.btnDelete {
+  padding: 10px;
+  background-color: rgb(240, 248, 255);
+  color: #000;
+  outline: none;
+  border: 0px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 200ms linear;
+}
+
+.btnDelete {
+  &:hover,
+  &:focus {
+    background-color: rgb(211, 96, 115);
+  }
+}
+
+.addBtn,
+.btnEdit {
+  &:hover,
+  &:focus {
+    background-color: rgb(96, 127, 211);
+  }
+}
+
+.btnEdit {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
